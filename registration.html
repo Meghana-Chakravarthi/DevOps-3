@@ -52,6 +52,18 @@
                         <label for="other">Other</label>
                     </div>
                 </div>
+                <!-- email & password -->
+                 <div class="field-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field-row">
+                    <label for="password">Password:</label>
+                    <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:220px;">
+                        <input type="password" id="password" name="password" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" title="Use at least 8 characters with letters and numbers" required style="flex:1;">
+                        <button type="button" id="togglePassword" style="padding:10px 14px; border:1px solid #b7c4db; border-radius:8px; background:#ffffff; cursor:pointer; color:#1f3f6e; font-weight:600;">Show</button>
+                    </div>
+                </div>
         </form>
     </div>
 </body>
