@@ -3,7 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration</title>
+    <style>
+            body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 40px 0;
+    background: #a9bee0;
+}
+
+h1 {
+    text-align: center;
+    color: #1c3d72;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.regpage {
+    width: 850px;
+    max-width: 95%;
+    margin: auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+form {
+    display: grid;
+    gap: 18px;
+}
+
+.field-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.field-row label:first-child {
+    width: 180px;
+    text-align: right;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.field-row input,
+.field-row textarea,
+.field-row select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #768eb5;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.field-row input:focus,
+.field-row textarea:focus {
+    border-color: #1e43b1;
+    box-shadow: 0 0 8px rgba(51,102,255,0.25);
+    outline: none;
+}
+
+.field-row textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.radio-row {
+    align-items: center;
+}
+
+.radio-options {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.radio-options input[type="radio"] {
+    margin: 0;
+    transform: scale(1.1);
+}
+
+.radio-options label {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #314b9b;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0f2c82;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .field-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .field-row label:first-child {
+        width: 100%;
+        text-align: left;
+    }
+
+    .radio-options {
+        width: 100%;
+    }
+}
+        </style>
 </head>
 <body>
     <h1> Student Registration </h1>
