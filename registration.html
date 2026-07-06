@@ -9,6 +9,7 @@
     <h1> Student Registration </h1>
     <div class = "regpage">
         <form autocomplete="on">
+            <!-- Name -->
             <div class="field-row">
                 <label for ="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" required>
@@ -21,6 +22,25 @@
                 <label for ="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" required>
             </div>
+            <!-- Class -->
+             <div class="field-row radio-row">
+                <label for="class">Class:</label>
+                <div class="radio-options">
+                    <input type="radio" id="csea" name="class" value="csea" required>
+                    <label for="csea">CSE-A</label>
+                    <input type="radio" id="cseb" name="class" value="cseb">
+                    <label for="cseb">CSE-B</label>
+                    <input type="radio" id="csec" name="class" value="csec">
+                    <label for="csec">CSE-C</label>
+                    <input type="radio" id="csed" name="class" value="csed">
+                    <label for="csed">CSE-D</label>
+                    <input type="radio" id="csee" name="class" value="csee">
+                    <label for="csee">CSE-E</label> 
+                    <label for="csef">CSE-F</label>
+                    <input type="radio" id="csef" name="class" value="csef">
+                </div>
+            </div>
+            <!-- Gender -->
         </form>
     </div>
 </body>
